@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarSong Orchestra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Full-screen canvas for solar system rendering -->
+    <canvas id="canvas"></canvas>
+
+    <!-- UI overlay for controls and music editor -->
+    <div id="ui-overlay">
+        <!-- Top toolbar -->
+        <div id="toolbar">
+            <button id="btn-add-planet">✦ Add Planet</button>
+            <div id="bpm-control">
+                <label for="bpm-slider">BPM:</label>
+                <input type="range" id="bpm-slider" min="60" max="200" value="120">
+                <span id="bpm-value">120</span>
+            </div>
+            <div id="toolbar-right">
+                <button id="btn-toggle-trails" title="Toggle orbit trails">☄️</button>
+                <select id="scale-select" title="Scale">
+                    <option value="pentatonic">Pentatonic</option>
+                    <option value="major">Major</option>
+                    <option value="minor">Minor</option>
+                </select>
+                <button id="btn-save" title="Save">💾</button>
+                <button id="btn-export" title="Export JSON">📤</button>
+                <button id="btn-import" title="Import JSON">📥</button>
+                <input type="file" id="import-file" accept=".json" hidden>
+            </div>
+        </div>
+
+        <!-- Music editor panel (hidden by default) -->
+        <div id="music-editor" class="hidden">
+            <div id="editor-header">
+                <h2 id="editor-planet-name">Planet Editor</h2>
+                <label for="instrument-select" class="sr-only">Instrument</label>
+                <select id="instrument-select">
+                    <option value="sine">Sine Pad</option>
+                    <option value="square">Square Lead</option>
+                    <option value="triangle">Triangle Pluck</option>
+                    <option value="sawtooth">Sawtooth Buzz</option>
+                    <option value="noise">Noise Percussion</option>
+                </select>
+                <button id="btn-close-editor">✕</button>
+            </div>
+            <div id="editor-grid"></div>
+        </div>
+    </div>
+
+    <!-- Hint overlay for first interaction -->
+    <div id="start-hint">
+        <p>🎵 Click anywhere to start the audio engine</p>
+    </div>
+
+    <!-- ES6 module entry point -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+
