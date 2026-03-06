@@ -2,7 +2,7 @@
 
 **A browser-based interactive music toy where you build a custom solar system and each planet is an instrument!**
 
-[**🚀 Play Now on GitHub Pages**](https://your-username.github.io/StarsongOrchestra/)
+[**🚀 Play Now on GitHub Pages**](https://FikerBiruk.github.io/StarsongOrchestra/)
 
 ![StarSong Orchestra](https://img.shields.io/badge/status-live-brightgreen)
 ![HTML5](https://img.shields.io/badge/HTML5-canvas-orange)
@@ -69,7 +69,7 @@ StarsongOrchestra/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/StarsongOrchestra.git
+   git clone https://github.com/FikerBiruk/StarsongOrchestra.git
    cd StarsongOrchestra
    ```
 
@@ -112,4 +112,6 @@ Built with ❤️ and Web Audio API
 ---
 
 **Happy music making! 🎵✨**
+
+
 
